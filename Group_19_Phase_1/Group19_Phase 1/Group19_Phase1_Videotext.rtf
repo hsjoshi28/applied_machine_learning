@@ -1,0 +1,27 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww13440\viewh7800\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Aishwarya:\
+Group 19 will be presenting cat vs. dog detector. This slide will give overview of what we are going to present in this presentation.  The main motto of this project is to detect whether the image is a dog or a cat image and we have to find where the cat or dog is in the image. And here, we have baseline model as gradient boosting model as it performs better than logistic regression and adaboost model. For finding the boundaries, we are using linear regression and to evaluate our model , we are using accuracy and F1 scores and to give a overview of what we are going to do in the next phase, we have included some future steps here\
+\
+Himanshu:\
+We have the dataset of almost 13k images, 6.8k belong to cat and 6.1k to dog. In this we have 15 Numerical data, and 5 categorical data. In the graph, we can see the histogram of two images(cat and dog) \
+We rescaled the images to 128*2* grids. We are going to use data Augmentation to increase the diversity of images available, without accumulationg any additional data. Also, it enables model to learn generalized features, and try not to overfit the model. The augmentation we will be using is Rotation, Zooming, and flipping of images(Horizontal, and vertical)\
+Slide 7, shows the data augmentation we will be using in later phases of the project.\
+\
+Sumitha:\
+This slide gives the overview of the baseline models we will be using in this project. Initially, we trained the model with only 2.5k images using logistic regression stochastic gradient descent, adaboost and gradient descent. From the results of these models, we found that gradient boost outperformed other models because of which we will use gradient boost to train our entire dataset. When comparing stochastic gradient decent with gradient boosting, we found that gradient boosting performed really well along both accuracy and F1 score which we used to evaluate the model. Thereby, we will be using gradient boosting as our baseline model for classifying images.\
+\
+When it came to detecting boundaries, we see that linear regression gave a very low MSE score which is the loss function for linear regression and hence will be used as a baseline model for boundary detection.\
+\
+This slide gives us a quick overview of evaluation metrics that we used ti finalize our baseline model on a data set of 2.5K images.\
+\
+This slide gives the results of training the images on entire data set. We clearly see that gradient boosting gives us a training accuracy of 77% and F1 score of 80%, which is far better than stochastic gradient descent and hence we have finalized gradient boosting as our baseline model.\
+\
+Sreelaxmi:\
+To conclude, accuracy of the logistic regression was less, so we improved it by using gradient boosting\uc0\u8203  there is still scope for improvement\u8203 . As the next steps, we are planning to fine tune the hyperparameters using GridSearchCV/RandomSearchCV\u8203 , image boundary detection can be improved further by using Ridge or Lasso regression. We plan to build a CNN model to improve accuracy of image detection\u8203 . A t-test can be performed to compare the baseline model with the improved model\u8203 .\
+}
